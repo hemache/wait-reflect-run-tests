@@ -1,0 +1,14 @@
+{
+  "name": "wait-reflect-run-tests",
+  "version": "0.1",
+  "description": "Wait for Reflect.run tests to finish",
+  "main": "main.js",
+  "repository": "https://github.com/hemache/wait-reflect-run-tests",
+  "author": "Adil Hemache",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "axios": "^0.23.0"
+  }
+}

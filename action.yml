@@ -1,0 +1,19 @@
+name: 'Wait for Reflect.run tests to finish'
+description: 'Wait for Reflect.run tests to finish'
+inputs:
+  api_key:
+    description: 'Reflect.run API key'
+    required: true
+  execution_id:
+    description: 'Execution ID https://reflect.run/docs/developer-api/documentation/#run-a-test'
+    required: true
+  timeout:
+    description: 'Timeout'
+    required: true
+    default: "30"
+outputs:
+  overall_status:
+    description: 'Tell if all tests succeeded or failed, and unknown when timeout'
+runs:
+  using: 'node12'
+  main: 'main.js'
